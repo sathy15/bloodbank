@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Group</title>
+    <script src="DonarFunc.js"></script>
+    <div class="myDiv">
+        <h1>BLOOD TYPE</h1>
+    </div><br>
+    <style>
+        div.transbox {
+            margin: 70px;
+            border: 10px;
+            opacity: 0.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(243, 22, 22);
+            padding: 10px;
+        }
+
+        body {
+            background-image: url(BloodType3.jpg);
+            background-size: 1400px 760px;
+        }
+
+        .btn-circle.btn-xl1 {
+            width: 300px;
+            height: 70px;
+            float: right;
+            padding: 10px 16px;
+            border-radius: 150px;
+            font-size: 25px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .btn-circle.btn-xl2 {
+            text-align: center;
+            font-size: 30px;
+            border: 7px;
+            width: 100px;
+            height: 50px;
+            padding-top: 0px;
+            border-radius: 150px;
+            background-color: white;
+        }
+
+        .btn-circle.btn-xl3 {
+            width: 370px;
+            height: 70px;
+            float: middle;
+            padding: 10px 16px;
+            border-radius: 150px;
+            font-size: 25px;
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="transbox">
+        <select id="member" name="member" class="btn btn-primary btn-circle btn-xl3">
+            <option value="A+"> ---SELECT BLOOD TYPE---</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary btn-circle btn-xl2"><a href="DataSelected.html">GO </a></button>
+    </div>
+    <div class="transbox">
+        <a href="Data.html">
+            <button class="btn btn-primary btn-circle btn-xl1">LIST ALL DONORS </button>
+        </a>
+    </div>
+</body>
+
+</html>

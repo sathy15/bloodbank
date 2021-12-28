@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="DonarFunc.js"></script>
+    <script src="Validation.js"></script>
+    <style>
+        body {
+            background-image: url(b7.jpg);
+            background-size: 1400px 600px;
+        }
+
+        .login {
+            width: 300px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 450px;
+            padding: 80px;
+            border-radius: 15px;
+            border-color: white;
+        }
+
+        label {
+            color: #b92f04;
+            font-size: 20px;
+        }
+
+        #date {
+            width: 300px;
+            height: 30px;
+            border: red;
+            border-radius: 8px;
+            padding-left: 18px;
+        }
+
+        #name {
+            width: 300px;
+            height: 30px;
+            border: red;
+            border-radius: 8px;
+            padding-left: 18px;
+        }
+
+        #conNum {
+            width: 300px;
+            height: 30px;
+            border: red;
+            border-radius: 8px;
+            padding-left: 18px;
+        }
+
+        #log {
+            width: 100px;
+            height: 30px;
+            border-radius: 17px;
+            padding-left: 7px;
+            background-color: rgb(248, 99, 99);
+        }
+
+        #logout {
+            width: 100px;
+            height: 30px;
+            border-radius: 17px;
+            padding-left: 7px;
+            background-color: rgb(248, 99, 99);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .xl1 {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xl1">
+        <br><button id="logout" name="logout" style="text-decoration: none;"><a href="index.jsp">Logout</a></button>
+    </div>
+    <div class="login">
+        <form method="get"  onsubmit="userValidation()">
+            <br><label style="color:red"><b>Donor Name</b><br>
+            </label>
+            <br><input type="text" id="donar_name" name="donar_name"  placeholder="Donor Name">
+            <br>
+            <br><label style="color:red"><b>Date</b><br>
+            </label>
+            <br><input style="width: 300px;" type="date" id="date" name="date"><br>
+            <br><label style="color:red"><b>Contact number</b><br>
+            </label>
+            <br><input type="number" id="contact_number" name="contact_number"  placeholder="Enter Contact Number">
+            <br>
+            <div class="container">
+                <br><br><button id="log" name="log">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

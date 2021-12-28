@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="DonarFunc.js"></script>
+    <script src="Validation.js"></script>
+    <style>
+        body {
+            background-image: url(B6.jpg);
+            background-size: 1400px 600px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 0 20px;
+            font-size: 20px;
+        }
+
+        #log {
+            width: 80px;
+            height: 30px;
+            border-radius: 17px;
+            padding-left: 10px;
+            background-color: rgb(248, 99, 99);
+        }
+
+        div {
+            text-align: center;
+        }
+
+        select {
+            width: 180px;
+            height: 30px;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        h1 {
+            color: rgb(218, 7, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Donor Registration Form</h1>
+
+    <form method="get" action="Home.html" onsubmit="return ValidationSignIn()">
+        
+        <table align="center">
+            <tr>
+                <td for="donor_id"><b>donor_id:</b></td>
+                <td><input type="number" id="donor_id" name="donor_id" placeholder="donor_id" maxlength="50" size="21" />
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td for="donarname"><b>Donar Name:</b></td>
+                <td><input type="text" id="donor_name" name="donor_name" placeholder="Enter name" maxlength="50" size="20" /></td>
+            </tr>
+            <br>
+            <tr>
+                <td for="date"><b>Register Date:</b></td>
+                <td><input type="date" id="date" name="date" style="width: 175px;">
+                </td>
+            </tr>
+            <tr>
+                <td for="dob"><b>DOB:</b></td>
+                <td><input type="date" id="dob" name="dob" style="width: 175px;">
+                </td>
+            </tr>
+            <tr>
+                <td for="gender"><b>Gender :</b></td>
+                <td> <select id="gender" name="gender">
+                        <option>Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>others</option>
+                </td>
+            </tr>
+            <tr>
+                <td for="blood_group"><b>Blood Group :</b></td>
+                <td> <select id="blood_group" name="blood_group">
+                        <option>Select</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td for="contact_number"><b> Phone No :</b></td>
+                <td>
+                    <input type="number" id="contact_number" name="contact_number" placeholder="Enter Ph No" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td for="address"><b>Address :</b></td>
+                <td><textarea id="address" name="address" value="address" placeholder=" Enter Current Address" cols="22"rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="password"><b>Password:</b></label></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter Password" maxlength="15" size="21"></td>
+            </tr>
+            <tr>
+                <td><label for="Cpassword"><b>Confirm Password:</b></label></td>
+                <td><input type="password" id="confirm_password" name="confirm_password" placeholder="Re-Enter Password" maxlength="15" size="21" /></td>
+            </tr>
+        </table>
+        <br>
+        <div>
+            <button align="center" id="log" onclick="Adding()"><b>Sign up</b></button>
+        </div>
+    </form>
+</body>
+
+</html>

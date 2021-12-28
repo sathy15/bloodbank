@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor details</title>
+    <script src="DonarFunc.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(240, 20, 9);
+        }
+
+        body {
+            background-image: url(BloodBank2.jpg);
+            background-size: 1350px 660px;
+        }
+
+        table,
+        th {
+            border: 1.5px solid black;
+            border-collapse: collapse;
+        }
+
+        .xl1 {
+            text-align: right;
+        }
+
+        #logout {
+            width: 80px;
+            height: 30px;
+            /* border: red;   */
+            border-radius: 7px;
+            padding-left: 8px;
+            background-color: rgb(158, 124, 129);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myDiv">
+        <h1>DONOR DETAILS</h1>
+        <div class="xl1">
+            <br><button name="logout" id="logout" style="text-decoration: none;"><a href="index.jsp"><b> Logout </b></a></button>
+        </div> <br><br>
+        <button onclick="getBlood()">click here</button><br><br>
+        <table style="width:100%">
+            <tr>
+                <th>DONOR_ID</th>
+                <th>DONOR_NAME</th>
+                <th>DATE</th>
+                <th>DOB</th>
+                <th>GENDER</th>
+                <th>BLOOD_GROUP</th>
+                <th>CONTACT_NUMBER</th>
+                <th>ADDRESS</th>
+                <th>PASSWORD</th>
+                <th>CONFIRM_PASSWORD</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+            </tr>
+            <tbody id="result"></tbody>
+        </table>
+</body>
+
+</html>
